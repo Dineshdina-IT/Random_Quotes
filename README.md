@@ -1,8 +1,7 @@
 <<<<<<< HEAD
 # Random Quote Generator
-## LIVE DEMO-[`CLICK HERE`](https://random-quote-sabari004.netlify.app/)
-## SCREENSHOTS
-![App Screenshot](https://res.cloudinary.com/dobtf02zs/image/upload/v1681808904/screenshots/Screenshot_17_r6hoxn.png)
+
+
 ## DEPLOYMENT
 - Clone this repository
 - `npm install` 
