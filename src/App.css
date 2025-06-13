@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  transition: background-color 0.6s ease;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background-color 0.6s ease;
+}
+
+#quote-box {
+  background: #fff;
+  color: #333;
+  padding: 2rem;
+  border-radius: 25px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.6s ease;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+.quote-icon {
+  margin-right: 0.6rem;
+  color: #888;
+  flex-shrink: 0;
+}
+
+.quote-author {
+  text-align: right;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#new-quote {
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+#new-quote:hover {
+  filter: brightness(90%);
+}
+
+.twitter-button {
+  color: white;
+  background-color: #1da1f2;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s ease;
+}
+
+.twitter-button:hover {
+  filter: brightness(85%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #quote-box {
+    padding: 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 1.2rem;
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
